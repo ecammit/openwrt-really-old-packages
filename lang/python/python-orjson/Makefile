@@ -11,13 +11,11 @@ PKG_MAINTAINER:=Timothy Ace <ecammit@gmail.com>
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
-HOST_BUILD_DEPENDS:=maturin/host
+PKG_BUILD_DEPENDS:=maturin/host
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
-include $(INCLUDE_DIR)/host-build.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
-include $(TOPDIR)/feeds/packages/lang/python/python3-host-build.mk
 
 define Package/python3-orjson
   SECTION:=lang
