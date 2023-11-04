@@ -11,7 +11,7 @@ PKG_MAINTAINER:=Timothy Ace <ecammit@gmail.com>
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
-PKG_BUILD_DEPENDS:=python3-maturin
+PKG_BUILD_DEPENDS:=maturin
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
