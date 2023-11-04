@@ -11,11 +11,13 @@ PKG_MAINTAINER:=Timothy Ace <ecammit@gmail.com>
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
-PKG_BUILD_DEPENDS:=
+HOST_BUILD_DEPENDS:=maturin/host
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/host-build.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
+include $(TOPDIR)/feeds/packages/lang/python/python3-host-build.mk
 
 define Package/python3-orjson
   SECTION:=lang
@@ -27,8 +29,7 @@ define Package/python3-orjson
 	+python3-light \
 	+python3-dateutil \
 	+python3-numpy \
-	+python3-uuid \
-	+maturin
+	+python3-uuid
 endef
 
 define Package/python3-orjson/description
