@@ -24,7 +24,7 @@ define Package/python3-orjson
   TITLE:=Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
   URL:=https://github.com/ijl/orjson
   DEPENDS:= \
-	+python3-lite \
+	+python3-light \
 	+python3-dateutil \
 	+python3-numpy \
 	+python3-uuid
