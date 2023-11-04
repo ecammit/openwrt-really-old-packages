@@ -11,7 +11,7 @@ PKG_MAINTAINER:=Timothy Ace <ecammit@gmail.com>
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
-PKG_BUILD_DEPENDS:=maturin/host
+PKG_BUILD_DEPENDS:=
 
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
@@ -27,7 +27,8 @@ define Package/python3-orjson
 	+python3-light \
 	+python3-dateutil \
 	+python3-numpy \
-	+python3-uuid
+	+python3-uuid \
+	+maturin
 endef
 
 define Package/python3-orjson/description
