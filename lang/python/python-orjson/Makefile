@@ -34,6 +34,9 @@ define Package/python3-orjson/description
   Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 endef
 
+$(echo "XXX:$TARGET_PATH_PKG")
+$(echo "YYY:$PATH")
+$(echo "ZZZ:$STAGING_DIR_HOSTPKG")
 $(eval $(call Py3Package,python3-orjson))
 $(eval $(call BuildPackage,python3-orjson))
 $(eval $(call BuildPackage,python3-orjson-src))
