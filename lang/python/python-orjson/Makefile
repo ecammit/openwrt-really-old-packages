@@ -17,6 +17,8 @@ include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 
+PATH:=$(PATH):$(STAGING_DIR_HOSTPKG)/bin:XXX:$(TARGET_PATH_PKG):YYY
+
 define Package/python3-orjson
   SECTION:=lang
   CATEGORY:=Languages
@@ -34,9 +36,6 @@ define Package/python3-orjson/description
   Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 endef
 
-$(echo "XXX:$TARGET_PATH_PKG")
-$(echo "YYY:$PATH")
-$(echo "ZZZ:$STAGING_DIR_HOSTPKG")
 $(eval $(call Py3Package,python3-orjson))
 $(eval $(call BuildPackage,python3-orjson))
 $(eval $(call BuildPackage,python3-orjson-src))
