@@ -17,7 +17,7 @@ include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 
-PATH:=$(PATH):$(STAGING_DIR_HOSTPKG)/bin:XXX:$(TARGET_PATH_PKG):YYY
+PATH:=$(TARGET_PATH_PKG)
 
 define Package/python3-orjson
   SECTION:=lang
