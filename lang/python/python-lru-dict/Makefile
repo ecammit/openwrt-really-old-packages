@@ -15,15 +15,13 @@ include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 
-PATH:=$(TARGET_PATH_PKG)
-
 define Package/python3-lru-dict
   SECTION:=lang
   CATEGORY:=Languages
   SUBMENU:=Python
   TITLE:=An Dict like LRU container
   URL:=https://github.com/amitdev/lru-dict
-  DEPENDS:=python3-light
+  DEPENDS:=+python3-light
 endef
 
 define Package/python3-lru-dict/description
