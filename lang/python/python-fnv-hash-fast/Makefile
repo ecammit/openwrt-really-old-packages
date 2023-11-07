@@ -5,6 +5,7 @@ PKG_VERSION:=0.5.0
 PKG_RELEASE:=1
 
 PYPI_NAME:=fnv-hash-fast
+PYPI_SOURCE_NAME:=fnv_hash_fast
 PKG_HASH:=a84d658952776a186418f4158fc8e55ff3c576ac32cc9ef7f8077efdf2d0b89f
 
 PKG_MAINTAINER:=Timothy Ace <ecammit@gmail.com>
