@@ -24,7 +24,7 @@ define Package/python3-fnv-hash-fast
   SUBMENU:=Python
   TITLE:=A fast version of fnv1a
   URL:=https://github.com/amitdev/fnv-hash-fast
-  DEPENDS:=+python3-light
+  DEPENDS:=+libstdcpp +python3-light
 endef
 
 define Package/python3-fnv-hash-fast/description
