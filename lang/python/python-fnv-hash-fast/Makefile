@@ -12,6 +12,8 @@ PKG_MAINTAINER:=Timothy Ace <ecammit@gmail.com>
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
+PKG_BUILD_DEPENDS:=python-cython/host python-poetry-core/host
+
 include $(TOPDIR)/feeds/packages/lang/python/pypi.mk
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
