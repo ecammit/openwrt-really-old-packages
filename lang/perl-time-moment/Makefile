@@ -37,7 +37,7 @@ define Build/Compile
 endef
 
 define Package/perl-time-moment/install
-        $(call perlmod/Install,$(1),Net auto/Net)
+        $(call perlmod/Install,$(1),Time auto/Time)
 endef
 
 define Host/Configure
