@@ -17,7 +17,7 @@ HOST_BUILD_DEPENDS:=perl/host
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
-include $(TOPDIR)/feeds/packages/perl/perlmod.mk
+include $(TOPDIR)/feeds/packages/lang/perl/perlmod.mk
 
 define Package/perl-time-moment
   SUBMENU:=Perl
